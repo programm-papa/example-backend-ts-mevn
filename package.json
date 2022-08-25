@@ -1,0 +1,38 @@
+{
+  "name": "wmk-backend",
+  "version": "1.0.0",
+  "description": "TypeScript version wmk-backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node .",
+    "serve:ts": "tsc -w",
+    "serve:js": "nodemon .",
+    "serve": "concurrently npm:serve:*"
+  },
+  "author": "@programm-papa",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express-ws": "^3.0.1",
+    "@types/mongoose": "^5.11.97",
+    "@types/passport": "^1.0.9",
+    "nodemon": "^2.0.19",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "password-generator": "^2.3.2"
+  }
+}
